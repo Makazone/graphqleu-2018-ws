@@ -26,4 +26,8 @@ cd gql-eu-demo3 && yarn && yarn start
 
 ### Step 3
 
+You are here!
+
 [Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/prisma-resolvers#step-3)
+
+In this step we are going to implement resolve functions with a help of prisma bindings
