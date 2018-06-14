@@ -16,6 +16,15 @@ git clone https://github.com/Makazone/graphqleu-2018-ws gql-eu-demo3
 cd gql-eu-demo3 && yarn && yarn start
 ```
 
+### Structure
+
+The demo consists of multiple steps. Each step is in a separate branch. You can peak (or check the solution) by doing a `git checkout`.
+
+1.  master - basic GraphQL server with in-memory DB
+2.  prisma-init - the starting point to integrate prisma
+3.  prisma-resolvers - prisma is integrated, time to write some resolvers
+4.  finish - implemented resolvers
+
 ### Step 1 (you are here ^^)
 
 [Jump](https://github.com/Makazone/graphqleu-2018-ws#step-1-you-are-here-)
