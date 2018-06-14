@@ -3,23 +3,68 @@ const { Prisma } = require("prisma-binding");
 
 const resolvers = {
   Query: {
-    info: () => `This is the API for a simple blogging application.`,
-    posts: (_, args) => {
-      return null;
+    posts: (_, args, context, info) => {
+      return context.db.query.posts(
+        {
+          where: {
+            OR: [
+              {
+                title_contains: args.searchString
+              },
+              {
+                content_contains: args.searchString
+              }
+            ]
+          }
+        },
+        info
+      );
     },
-    post: (_, args) => {
-      return null;
+    post: (_, args, context, info) => {
+      return context.db.query.post(
+        {
+          where: {
+            id: args.id
+          }
+        },
+        info
+      );
     }
   },
   Mutation: {
-    createDraft: (_, args) => {
-      return null;
+    createDraft: (_, args, context, info) => {
+      return context.db.mutation.createPost(
+        {
+          data: {
+            title: args.title,
+            content: args.content
+          }
+        },
+        info
+      );
     },
-    publish: (_, args) => {
-      return null;
+    publish: (_, args, context, info) => {
+      return context.db.mutation.updatePost(
+        {
+          where: {
+            id: args.id
+          },
+          data: {
+            published: true
+          }
+        },
+        info
+      );
     },
-    deletePost: (_, args) => {
-      return null;
+    deletePost: (_, args, context, info) => {
+      return context.db.mutation.deletePost(
+        {
+          where: {
+            id: args.id
+          }
+        },
+        info
+      );
     }
   }
 };

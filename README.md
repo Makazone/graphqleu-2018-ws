@@ -27,3 +27,9 @@ cd gql-eu-demo3 && yarn && yarn start
 ### Step 3
 
 [Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/prisma-resolvers#step-3)
+
+### Step 4
+
+[Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/finish#step-4)
+
+This branch contains a completed project.
