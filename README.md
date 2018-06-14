@@ -20,12 +20,10 @@ cd gql-eu-demo3 && yarn && yarn start
 
 [Jump](https://github.com/Makazone/graphqleu-2018-ws#step-1)
 
-### Step 2 (you are here ^^)
+### Step 2
 
 [Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/prisma-init#step-2)
 
-1.  Add Prisma if you don't have it already `yarn add -D prisma` or `yarn global add prisma`
-2.  Copy your `prisma` folder [from Demo 2](https://github.com/alexedev/graphqleu-2018-ws/blob/master/prisma/datamodel.graphql)
-3.  Deploy the updated model `yarn prisma deploy`
-4.  Add prisma bindings `yarn add prisma-binding`
-5.  Init Prisma in context & buckle up
+### Step 3
+
+[Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/prisma-resolvers#step-3)

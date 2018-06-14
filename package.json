@@ -6,12 +6,18 @@
   "author": "GraphQL Community",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "deploy:prisma": "prisma deploy",
+    "prisma:schema": "graphql get-schema -p prisma",
+    "playground": "graphql playground"
   },
   "dependencies": {
-    "graphql-yoga": "^1.14.8"
+    "graphql": "^0.13.2",
+    "graphql-yoga": "^1.14.8",
+    "prisma-binding": "^2.1.0"
   },
   "devDependencies": {
+    "graphql-cli": "^2.16.3",
     "prisma": "^1.9.0"
   }
 }
