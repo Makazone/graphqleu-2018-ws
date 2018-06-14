@@ -16,64 +16,16 @@ git clone https://github.com/Makazone/graphqleu-2018-ws gql-eu-demo3
 cd gql-eu-demo3 && yarn && yarn start
 ```
 
-### Step 1 (you are here ^^)
+### Step 1
 
-[Jump](https://github.com/Makazone/graphqleu-2018-ws#step-1-you-are-here-)
+[Jump](https://github.com/Makazone/graphqleu-2018-ws#step-1)
 
-Here we have a simple GraphQL Server with an in-memory DB. It uses [graphql-yoga](https://github.com/prismagraphql/graphql-yoga).
+### Step 2 (you are here ^^)
 
-#### Sample Queries
+[Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/prisma-init#step-2)
 
-```graphql
-query {
-  posts(searchString: "QL") {
-    id
-    title
-    content
-    published
-  }
-}
-```
-
-```graphql
-query {
-  post(id: "post-0") {
-    id
-    title
-    content
-    published
-  }
-}
-```
-
-```graphql
-mutation {
-  createDraft(
-    title: "GraphQL Bindings"
-    content: "Reuse and compose GraphQL APIs"
-  ) {
-    id
-    published
-  }
-}
-```
-
-```graphql
-mutation {
-  publish(id: "post-0") {
-    id
-    published
-  }
-}
-```
-
-```graphql
-mutation {
-  deletePost(id: "post-0") {
-    id
-    title
-    content
-    published
-  }
-}
-```
+1.  Add Prisma if you don't have it already `yarn add -D prisma` or `yarn global add prisma`
+2.  Copy your `prisma` folder [from Demo 2](https://github.com/alexedev/graphqleu-2018-ws/blob/master/prisma/datamodel.graphql)
+3.  Deploy the updated model `yarn prisma deploy`
+4.  Add prisma bindings `yarn add prisma-binding`
+5.  Init Prisma in context & buckle up
