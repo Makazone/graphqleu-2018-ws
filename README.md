@@ -33,3 +33,7 @@ cd gql-eu-demo3 && yarn && yarn start
 [Jump](https://github.com/Makazone/graphqleu-2018-ws/tree/finish#step-4)
 
 This branch contains a completed project.
+
+### Bonus Level
+
+Subscriptions with Prisma
