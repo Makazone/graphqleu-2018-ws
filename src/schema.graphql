@@ -13,5 +13,5 @@ type Mutation {
 }
 
 type Subscription {
-  postPublished: Post!
+  postPublished: Post
 }

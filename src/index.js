@@ -66,6 +66,22 @@ const resolvers = {
         info
       );
     }
+  },
+  Subscription: {
+    postPublished: {
+      subscribe: async (parent, args, ctx, info) => {
+        try {
+          return ctx.db.subscription.post({}, info);
+        } catch (e) {
+          console.log(e);
+        }
+      }
+      //   resolve: (payload, args, context, info) => {
+      //     // Manipulate and return the new value
+      //     console.log(payload.node);
+      //     return payload.node;
+      //   }
+    }
   }
 };
 
