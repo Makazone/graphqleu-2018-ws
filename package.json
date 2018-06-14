@@ -1,0 +1,14 @@
+{
+  "name": "gql-eu-workshop-demo3",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/Makazone/graphqleu-2018-ws.git",
+  "author": "GraphQL Community",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.14.8"
+  }
+}
